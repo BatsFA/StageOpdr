@@ -19,18 +19,15 @@ export default function App() {
   }, []);
   const renderItem = ({ item }) => (
     <View style={styles.gameContainer} key={item.id}>
-      <Text>Name: {item.title}</Text>
-      <Text>ID: {item.id}</Text>
-      <Text>------------------------</Text>
+      <Text style={styles.gameTitle}>{item.title}</Text>
+      <Text style={styles.gameId}>ID: {item.id}</Text>
     </View>
   );
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
 
-      <View style={styles.games}>
-        <Text>All Games (Sorted by ID):</Text>
+      <View style={styles.gamelist}>
+        <Text style={styles.titlelist}>All Games (Sorted by ID):</Text>
         <FlatList
           data={games}
           renderItem={renderItem}
@@ -43,20 +40,38 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  gameContainer: {
-    flex: 1,
-    padding: 10,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    margin: 5,
-  },
   container: {
     flex: 1,
+    width: '100%',
+    margin: 10,
+    marginTop: 20,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  games: {
-    width: '2em',
-  }
+  titlelist: {
+    paddingBottom: 10,
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  gameContainer: {
+    flex: 1,
+    width: '45%',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    margin: 5,
+    padding: 5,
+  },
+  gamelist: {
+    width: "85%",
+  },
+  gameTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  gameId: {
+    fontSize: 14,
+    color: '#555',
+  },
 });
