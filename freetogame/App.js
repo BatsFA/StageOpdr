@@ -2,11 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
+import { Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import axios from 'axios';
-import tailwind from 'tailwindcss';
 import AppDetails from './App_details'; // Import AppDetails
 
 const Stack = createStackNavigator();
