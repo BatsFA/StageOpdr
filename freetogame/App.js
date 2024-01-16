@@ -65,45 +65,45 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  navigator: {
-    width: '100%',
-    height: '100%',
-  },
-  navcontainer: {
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: '#ff0000',
-  },
-  container: {
-    flex: 1,
-    width: '100%',
-    backgroundColor: '#fff',
-    borderTopWidth: 1,
-  },
-  titlelist: {
-    paddingBottom: 10,
-    textAlign: 'center',
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  gameContainer: {
-    flex: 1,
-    width: '45%',
-    borderWidth: 1,
-    borderColor: '#ccc',
-    margin: 5,
-    padding: 5,
-  },
-  gamelist: {
-    width: '85%',
-  },
-  gameTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  gameId: {
-    fontSize: 14,
-    color: '#555',
-  },
-});
+// const styles = StyleSheet.create({
+//   navigator: {
+//     width: '100%',
+//     height: '100%',
+//   },
+//   navcontainer: {
+//     justifyContent: 'center',
+//     borderWidth: 1,
+//     borderColor: '#ff0000',
+//   },
+//   container: {
+//     flex: 1,
+//     width: '100%',
+//     backgroundColor: '#fff',
+//     borderTopWidth: 1,
+//   },
+//   titlelist: {
+//     paddingBottom: 10,
+//     textAlign: 'center',
+//     fontSize: 20,
+//     fontWeight: 'bold',
+//   },
+//   gameContainer: {
+//     flex: 1,
+//     width: '45%',
+//     borderWidth: 1,
+//     borderColor: '#ccc',
+//     margin: 5,
+//     padding: 5,
+//   },
+//   gamelist: {
+//     width: '85%',
+//   },
+//   gameTitle: {
+//     fontSize: 16,
+//     fontWeight: 'bold',
+//   },
+//   gameId: {
+//     fontSize: 14,
+//     color: '#555',
+//   },
+// });
