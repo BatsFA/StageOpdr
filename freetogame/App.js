@@ -55,8 +55,8 @@ function HomeScreen({ navigation }) {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+    <NavigationContainer style={styles.navcontainer}>
+      <Stack.Navigator stle={styles.navigator} initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="AppDetails" component={AppDetails} />
       </Stack.Navigator>
@@ -65,14 +65,20 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  navigator: {
+    width: '100%',
+    height: '100%',
+  },
+  navcontainer: {
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#ff0000',
+  },
   container: {
     flex: 1,
     width: '100%',
-    margin: 10,
-    marginTop: 20,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderTopWidth: 1,
   },
   titlelist: {
     paddingBottom: 10,
