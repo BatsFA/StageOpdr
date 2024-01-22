@@ -32,7 +32,7 @@ function HomeScreen({ navigation }) {
     <TouchableOpacity
       style={styles.gameContainer}
       key={item.id}
-      onPress={() => navigation.navigate('AppDetails', { game: item })}
+      onPress={() => navigation.navigate('Details', { game: item })}
     >
       <Image 
          source={{uri: item.thumbnail}}
@@ -67,7 +67,7 @@ export default function App() {
     <NavigationContainer style={styles.navcontainer}>
       <Stack.Navigator style={styles.navigator} initialRouteName="Home">
         <Stack.Screen style={styles.navitem} name="Home" component={HomeScreen} />
-        <Stack.Screen style={styles.navitem} name="AppDetails" component={AppDetails} />
+        <Stack.Screen style={styles.navitem} name="Details" component={AppDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );
